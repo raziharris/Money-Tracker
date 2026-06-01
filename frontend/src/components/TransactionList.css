@@ -1,0 +1,152 @@
+.transaction-list {
+  margin-top: 2rem;
+}
+
+.transaction-list h2 {
+  margin-bottom: 1.5rem;
+  color: var(--text);
+  font-size: 1.35rem;
+}
+
+.no-transactions {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 2rem;
+  font-size: 1.1rem;
+  background: rgba(216, 170, 61, 0.06);
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+}
+
+.table-container {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+}
+
+table thead {
+  background: #0f0d09;
+}
+
+table th {
+  padding: 1rem;
+  text-align: left;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--gold-bright);
+  border-bottom: 1px solid var(--line-strong);
+  text-transform: uppercase;
+}
+
+table td {
+  padding: 1rem;
+  color: var(--text);
+  border-bottom: 1px solid rgba(239, 196, 94, 0.11);
+}
+
+table tbody tr:hover {
+  background: rgba(216, 170, 61, 0.05);
+}
+
+table input,
+table select {
+  padding: 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #0d0c0a;
+  color: var(--text);
+  width: 100%;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.badge.expense {
+  background: rgba(255, 107, 107, 0.14);
+  color: #ff9a9a;
+  border: 1px solid rgba(255, 107, 107, 0.28);
+}
+
+.badge.income {
+  background: rgba(110, 211, 145, 0.14);
+  color: #98e8b4;
+  border: 1px solid rgba(110, 211, 145, 0.28);
+}
+
+.amount {
+  font-weight: 600;
+}
+
+.amount.expense {
+  color: #ff9a9a;
+}
+
+.amount.income {
+  color: #98e8b4;
+}
+
+.btn-edit,
+.btn-delete,
+.btn-save,
+.btn-cancel {
+  padding: 0.4rem 0.8rem;
+  margin: 0 0.25rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.btn-edit {
+  background: var(--gold);
+  color: #171104;
+}
+
+.btn-edit:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+.btn-delete {
+  background: #8f2c2c;
+  color: white;
+}
+
+.btn-delete:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.btn-save {
+  background: #277748;
+  color: #f0fff5;
+}
+
+.btn-save:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.btn-cancel {
+  background: var(--surface-muted);
+  color: var(--text);
+  border: 1px solid var(--line);
+}
+
+.btn-cancel:hover {
+  filter: brightness(1.12);
+  transform: translateY(-1px);
+}
